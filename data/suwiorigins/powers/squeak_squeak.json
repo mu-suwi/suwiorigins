@@ -1,0 +1,12 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:play_sound",
+		"sound": "minecraft:entity.bat.ambient"
+	},
+	"cooldown": 15,
+	"hud_render": {
+		"should_render": false
+	},
+	"name": "Squeak Squeak",
+}

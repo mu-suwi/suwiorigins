@@ -1,0 +1,17 @@
+{
+	"name": "Lowly Vampire",
+	"description": "Contemptuous undead, you burn in the sun but you can fly and dont need to breath.",
+	"powers": [
+		"origins:burn_in_daylight",
+		"origins:cat_vision",
+		"origins:water_breathing",
+		"suwiorigins:unholi",
+		"suwiorigins:bad_at_sipping",
+		"suwiorigins:squeak_squeak"
+	],
+	"icon": {
+		"item": "minecraft:rotten_flesh"
+	},
+	"order": 2,
+	"impact": 2
+}
