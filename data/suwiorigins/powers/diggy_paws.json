@@ -1,0 +1,43 @@
+{
+	"type": "origins:multiple",
+	
+	"harvest_stone": {
+		"type": "origins:modify_harvest",
+		"allow": true,
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "origins:natural_stone"
+		}
+	},
+	
+	"stone_break_speed": {
+		"type": "origins:modify_break_speed",
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "origins:natural_stone"
+		},
+		"condition": {
+		  "type": "origins:using_effective_tool",
+		  "inverted": true
+		},
+		"modifier": {
+		  "value": 0.06,
+		  "operation": "addition"
+		}
+	},
+
+	"dirt_break_speed": {
+		"type": "origins:modify_break_speed",
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:mineable/shovel"
+		},
+		"modifier": {
+		  "value": 0.2,
+		  "operation": "addition"
+		}
+	},
+
+	"name": "Diggy Paws",
+	"description": "You can easily dig through stone and dirt without a tool."
+} 

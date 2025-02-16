@@ -1,0 +1,12 @@
+{
+	"type": "origins:modify_damage_taken",
+	"modifier": {
+		"value": 2.5,
+		"operation": "addition"
+	},
+	"damage_condition": {
+		"type": "origins:fire"
+	},
+	"name": "Not Fireproof",
+	"description": "Despite being a water creature, you take extra fire-element damage."
+} 

@@ -1,0 +1,90 @@
+{
+	"type": "origins:multiple",
+
+	"swimmy": {
+		"type": "origins:swimming",
+
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:in_block",
+                "block_condition": {
+                    "type": "origins:fluid",
+                    "fluid_condition": {
+                        "type": "origins:fluid",
+                        "fluid": "minecraft:lava"
+                    }
+                }
+            },
+            {
+                "type": "origins:in_block",
+                "block_condition": {
+                    "type": "origins:fluid",
+                    "fluid_condition": {
+                        "type": "origins:fluid",
+                        "fluid": "minecraft:flowing_lava"
+                    }
+                }
+            }
+        ]
+    }
+	
+	},
+
+	"swimmy_speed": {
+		"type": "origins:modify_swim_speed",
+        
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:in_block",
+                "block_condition": {
+                    "type": "origins:fluid",
+                    "fluid_condition": {
+                        "type": "origins:fluid",
+                        "fluid": "minecraft:lava"
+                    }
+                }
+            },
+            {
+                "type": "origins:in_block",
+                "block_condition": {
+                    "type": "origins:fluid",
+                    "fluid_condition": {
+                        "type": "origins:fluid",
+                        "fluid": "minecraft:flowing_lava"
+                    }
+                }
+            }
+        ]
+    },
+		"modifier": {
+			"operation": "addition",
+			"value": -3
+		}
+	},
+
+	"lavaspeed": {
+		"type": "origins:modify_lava_speed",
+		"modifier": {
+			"name": "Additional lava speed",
+			"value": 0.25,
+			"operation": "addition"
+		}
+	},
+
+	"fire_immune": {
+		"type": "origins:fire_immunity"
+	},
+
+	"can_see_in_lava_theoretically": {
+		"type": "origins:lava_vision",
+		"s": 0,
+		"v": 15
+	},
+
+	"name": "Lava Paddler",
+	"description": "You can swim comfortably in lava."
+}

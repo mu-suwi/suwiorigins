@@ -1,0 +1,23 @@
+{
+	"type": "origins:modify_damage_taken",
+	"modifiers": [
+		{
+			"value": -0.5,
+			"operation": "multiply_total_multiplicative"
+		},
+		{
+			"value": -3,
+			"operation": "addition"
+		}
+	],
+	"damage_condition": {
+		"type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:from_falling"
+			}
+		]
+	},
+	"name": "Graceful Landing",
+	"description": "You take half as much damage from falling or hitting a wall."
+} 

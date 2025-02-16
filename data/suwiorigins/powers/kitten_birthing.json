@@ -1,0 +1,31 @@
+{
+    "name": "Kitten Birthing",
+    "description": "You're sooooo pregnant",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "summon cat"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "data merge entity @e[type=cat,tag=!offspring,limit=1,sort=nearest] {Age:-24000,Owner:[I;-370659959,649085872,-2042740062,-1844063235],CollarColor:6b,Tags:[\"offspring\"]}"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.cat.beg_for_food",
+                "volume": 1,
+                "pitch": 1
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.cat.eat",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    },
+    "cooldown": 80
+}

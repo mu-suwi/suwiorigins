@@ -1,0 +1,18 @@
+{
+	
+	"type": "origins:self_action_when_hit",
+	"entity_action": {
+		"type": "origins:delay",
+		"ticks": 10,
+		"action": {
+			"type": "origins:extinguish"
+		}
+	},
+	"damage_condition": {
+		"type": "origins:fire"
+	},
+
+	"name": "Flame Suppressant",
+	"description": "Your gooey chemistry extinguishes flames faster."
+}
+

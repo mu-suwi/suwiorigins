@@ -1,0 +1,39 @@
+{
+    "name": "Critical Mass",
+    "description": "Excess saturation turns into density. When you reach enough density, you'll grow..!",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:relative_health",
+                "comparison": ">=",
+                "compare_to": 1
+            },
+            {
+                "type": "origins:food_level",
+                "comparison": ">=",
+                "compare_to": 20
+            },
+            {
+                "type": "origins:saturation_level",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:exhaust",
+                "amount": 1
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scoreboard players add @s bippymass 1"
+            }
+        ]
+    }
+}

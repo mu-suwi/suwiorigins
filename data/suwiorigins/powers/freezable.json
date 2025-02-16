@@ -1,0 +1,49 @@
+ {
+	"type": "origins:multiple",
+	
+	"powdersnow": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": 0,
+		"max_stacks": 3,
+		"duration_per_stack": 40,
+		"tick_rate": 20,
+		"effect": {
+			"effect": "minecraft:slowness",
+			"is_ambient": true,
+			"show_particles": false,
+			"show_icon": true
+		},
+		"condition": {
+			"type": "origins:in_block_anywhere",
+			"block_condition": {
+				"type": "origins:block",
+				"block": "minecraft:snow_block"
+			}
+		}
+	},
+
+	"snowball": {
+		"type": "origins:action_when_hit",
+		"damage_condition": {
+			"type": "origins:projectile",
+			"projectile": "minecraft:snowball"
+		},
+		"bientity_action": {
+			"type": "origins:actor_action",
+			"action": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:slowness",
+					"duration": 40,
+					"amplifier": 3,
+					"is_ambient": true,
+					"show_particles": false,
+					"show_icon": true
+				}
+			}
+		}
+	},
+
+	"name": "Freezes Solid",
+	"description": "Powder Snow and thrown Snowballs will completely immobilize you."
+ }

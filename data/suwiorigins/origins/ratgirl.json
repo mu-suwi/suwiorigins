@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"origins:sprint_jump",
+		"suwiorigins:less_fall_damage",
+		"origins:weak_arms",
+		"suwiorigins:disenchanted",
+		"suwiorigins:milk_dependent",
+		"suwiorigins:cheese_breedable"
+	],
+	"icon": "minecraft:pink_wool",
+	"order": 10,
+	"impact": 2,
+	"name": "Murine",
+	"description": "Weird cave-dwelling vermin. Can be lured out with high-density foods."
+}

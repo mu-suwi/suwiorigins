@@ -1,0 +1,11 @@
+{
+    "name": "Weighty Creature",
+    "description": "Due to your dense body, you're resistant to knockback.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.knockback_resistance",
+        "operation": "addition",
+        "value": 0.4
+    },
+    "update_health": true
+}

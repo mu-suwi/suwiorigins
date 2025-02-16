@@ -1,0 +1,21 @@
+{
+    "name": "Offhand? What Hand",
+    "description": "You have to hold everything in your mouth, so you'll drop anything you try to put in your offhand slot.",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "offhand",
+        "item_condition": {
+            "inverted": true,
+            "type": "origins:empty"
+        }
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:drop_inventory",
+        "inventory_type": "inventory",
+        "slots": [],
+        "slot": "weapon.offhand",
+        "retain_ownership": true
+    }
+}

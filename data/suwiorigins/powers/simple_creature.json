@@ -1,0 +1,9 @@
+{
+	"type": "origins:modify_xp_gain",
+	"modifier": {
+		"operation": "multiply_total_multiplicative",
+		"value": -0.1
+	},
+	"name": "Simple",
+	"description": "You gain experience 10% more slowly."
+}

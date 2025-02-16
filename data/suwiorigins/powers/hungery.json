@@ -1,0 +1,27 @@
+{
+    "name": "Unsatable",
+    "description": "Saturation won't last long.",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:relative_health",
+                "comparison": ">=",
+                "compare_to": 1
+            },
+            {
+                "type": "origins:food_level",
+                "comparison": ">=",
+                "compare_to": 20
+            },
+            {
+                "type": "origins:saturation_level",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        ]
+    },
+    "type": "origins:exhaust",
+    "interval": 20,
+    "exhaustion": 1
+}

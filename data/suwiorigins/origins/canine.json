@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"suwiorigins:fast_runner",
+		"suwiorigins:diggy_paws",
+		"suwiorigins:strong_stomach",
+		"suwiorigins:bark",
+		"suwiorigins:howl",
+		"suwiorigins:huge_appetite"
+	],
+	"icon": "minecraft:bone",
+	"order": 0,
+	"impact": 1,
+	"name": "Canine",
+	"description": "Canines are hardy and loyal and very good at being annoying."
+}

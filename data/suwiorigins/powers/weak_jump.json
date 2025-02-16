@@ -1,0 +1,13 @@
+{
+    "name": "Heavy",
+    "description": "Due to your density, you can't jump a whole block unless you're sprinting.",
+    "condition": {
+        "inverted": true,
+        "type": "origins:sprinting"
+    },
+    "type": "origins:modify_jump",
+    "modifier": {
+        "operation": "multiply_total_multiplicative",
+        "value": -0.25
+    }
+}

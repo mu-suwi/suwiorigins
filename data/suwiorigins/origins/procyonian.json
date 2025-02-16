@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"origins:cat_vision",
+		"suwiorigins:iron_stomach",
+		"suwiorigins:cold_immunity",
+		"suwiorigins:pouch",
+		"suwiorigins:bottomless"
+	],
+	"icon": "minecraft:gray_wool",
+	"order": 1,
+	"impact": 1,
+	"name": "Procyonian",
+	"description": "Raccoons are known for their cunning, their skill at foraging and their thick fur coats."
+}

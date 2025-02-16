@@ -1,0 +1,163 @@
+{
+    "name": "Bippy Diet",
+    "description": "As a cheesecake, you can only consume sweets and dairy that add to your delicious body.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:food"
+            },
+            {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": [
+                    {
+                        "item": "minecraft:apple"
+                    },
+                    {
+                        "item": "minecraft:golden_apple"
+                    },
+                    {
+                        "item": "minecraft:enchanted_golden_apple"
+                    },
+                    {
+                        "item": "minecraft:cookie"
+                    },
+                    {
+                        "item": "minecraft:melon_slice"
+                    },
+                    {
+                        "item": "minecraft:carrot"
+                    },
+                    {
+                        "item": "minecraft:pumpkin_pie"
+                    },
+                    {
+                        "item": "minecraft:sweet_berries"
+                    },
+                    {
+                        "item": "minecraft:glow_berries"
+                    },
+                    {
+                        "item": "minecraft:honey_bottle"
+                    },
+                    {
+                        "item": "create:bar_of_chocolate"
+                    },
+                    {
+                        "item": "create:sweet_roll"
+                    },
+                    {
+                        "item": "create:chocolate_glazed_berries"
+                    },
+                    {
+                        "item": "create:honeyed_apple"
+                    },
+                    {
+                        "item": "farmersdelight:cake_slice"
+                    },
+                    {
+                        "item": "farmersdelight:apple_pie_slice"
+                    },
+                    {
+                        "item": "farmersdelight:sweet_berry_cheesecake_slice"
+                    },
+                    {
+                        "item": "farmersdelight:chocolate_pie_slice"
+                    },
+                    {
+                        "item": "farmersdelight:sweet_berry_cookie"
+                    },
+                    {
+                        "item": "farmersdelight:honey_cookie"
+                    },
+                    {
+                        "item": "farmersdelight:glow_berry_custard"
+                    },
+                    {
+                        "item": "farmersdelight:melon_popsicle"
+                    },
+                    {
+                        "item": "farmersdelight:fruit_salad"
+                    },
+                    {
+                        "item": "expandeddelight:cheese_wheel"
+                    },
+                    {
+                        "item": "expandeddelight:cheese_slice"
+                    },
+                    {
+                        "item": "expandeddelight:cheese_sandwich"
+                    },
+                    {
+                        "item": "expandeddelight:peanut_butter"
+                    },
+                    {
+                        "item": "expandeddelight:sweet_roll"
+                    },
+                    {
+                        "item": "expandeddelight:berry_sweet_roll"
+                    },
+                    {
+                        "item": "expandeddelight:glow_berry_sweet_roll"
+                    },
+                    {
+                        "item": "expandeddelight:chocolate_cookie"
+                    },
+                    {
+                        "item": "expandeddelight:sugar_cookie"
+                    },
+                    {
+                        "item": "expandeddelight:snickerdoodle"
+                    },
+                    {
+                        "item": "expandeddelight:cinnamon_apples"
+                    },
+                    {
+                        "item": "expandeddelight:apple_juice"
+                    },
+                    {
+                        "item": "expandeddelight:sweet_berry_juice"
+                    },
+                    {
+                        "item": "expandeddelight:glow_berry_juice"
+                    },
+                    {
+                        "item": "expandeddelight:sweet_berry_jelly"
+                    },
+                    {
+                        "item": "expandeddelight:glow_berry_jelly"
+                    },
+                    {
+                        "item": "expandeddelight:peanut_honey_soup"
+                    },
+                    {
+                        "item": "betterend:sweet_berry_jelly"
+                    },
+                    {
+                        "item": "betterend:shadow_berry_jelly"
+                    },
+                    {
+                        "item": "betterend:blossom_berry_jelly"
+                    },
+                    {
+                        "item": "betterend:shadow_berry_raw"
+                    },
+                    {
+                        "item": "betterend:shadow_berry_cooked"
+                    },
+                    {
+                        "item": "betterend:blossom_berry"
+                    },
+                    {
+                        "item": "betternether:black_apple"
+                    },
+                    {
+                        "item": "betterend:cave_pumpkin_pie"
+                    }
+                ]
+            }
+        ]
+    }
+}

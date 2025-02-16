@@ -1,0 +1,32 @@
+{
+    "name": "Archery Incapable",
+    "description": "You lack the required limbs to use bows or load crossbows.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "crossbow"
+                        }
+                    },
+                    {
+                        "inverted": true,
+                        "type": "origins:nbt",
+                        "nbt": "{Charged:1b}"
+                    }
+                ]
+            },
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "bow"
+                }
+            }
+        ]
+    }
+}

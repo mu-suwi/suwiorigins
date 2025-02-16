@@ -1,0 +1,26 @@
+{
+    "name": "test",
+    "description": "test",
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "type": "origins:action_on_block_use",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.brewing_stand.brew",
+                "volume": 0.8,
+                "pitch": 0.8
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.player.burp",
+                "volume": 1,
+                "pitch": 0.8
+            }
+        ]
+    },
+    "action_result": "success"
+}

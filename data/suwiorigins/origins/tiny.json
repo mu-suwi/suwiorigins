@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"suwiorigins:thorns_immunity",
+		"origins:weak_arms"
+	],
+	"icon": "minecraft:red_mushroom",
+	"order": 0,
+	"impact": 3,
+	"name": "Small",
+	"description": "You are eensy weensy tiny",
+	"unchoosable": true
+}

@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"suwiorigins:no_doors",
+		"suwiorigins:no_offhand",
+		"suwiorigins:no_bows",
+		"suwiorigins:knockback_resistant",
+		"suwiorigins:bippy_diet",
+		"origins:more_exhaustion",
+		"suwiorigins:critical_mass"
+	],
+	"icon": "minecraft:cake",
+	"order": 0,
+	"impact": 3,
+	"name": "Bippy",
+	"unchoosable": true,
+	"description": "Likes: Tummy Rub"
+}

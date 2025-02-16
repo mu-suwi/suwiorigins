@@ -1,0 +1,15 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 0.2
+    },
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:sprinting"
+    },
+    
+    "name": "Fast Runner",
+    "description": "Your Sprint is slightly faster."
+} 

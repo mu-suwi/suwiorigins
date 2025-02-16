@@ -1,0 +1,17 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:play_sound",
+		"sound": "minecraft:entity.wolf.howl",
+		"pitch": 1.5,
+		"volume": 16
+	},
+	"condition": {
+		"type": "origins:sneaking"
+	},
+	"cooldown": 40,
+	"hud_render": {
+		"should_render": false
+	},
+	"hidden": true
+}

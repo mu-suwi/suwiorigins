@@ -1,0 +1,108 @@
+{
+    "name": "Eat",
+    "description": "No one can stop you.",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:sneaking"
+            },
+            {
+                "type": "origins:food_level",
+                "comparison": "<",
+                "compare_to": 20
+            }
+        ]
+    },
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "/tellraw @a [{\"selector\":\"@p\"},{\"text\":\" was eaten alive\"}]"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "gamemode spectator @p"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "spectate @p[tag=gobbler] @p"
+                            },
+                            "ticks": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:swing_hand",
+                            "hand": "MAIN_HAND"
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:item.honey_bottle.drink",
+                            "volume": 1,
+                            "pitch": 0.8
+                        },
+                        {
+                            "type": "origins:feed",
+                            "food": 15,
+                            "saturation": 18
+                        },
+                        {
+                            "type": "origins:delay",
+                            "action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:play_sound",
+                                        "sound": "minecraft:entity.player.burp",
+                                        "volume": 1,
+                                        "pitch": 0.8
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @p remove gobbler"
+                                    }
+                                ]
+                            },
+                            "ticks": 25
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "tag @p add gobbler"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:player"
+        }
+    },
+    "item_condition": {
+        "type": "origins:empty"
+    },
+    "hands": [
+        "main_hand"
+    ],
+    "action_result": "success",
+    "priority": 0
+}

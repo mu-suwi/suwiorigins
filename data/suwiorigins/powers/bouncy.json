@@ -1,0 +1,198 @@
+{
+    "type": "origins:multiple",
+    "name": "Bouncy",
+    "description": "You jump very high, and bounce instead of taking fall damage. You don't bounce while sneaking or jumping.",
+    "jump": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "add_base_late",
+            "value": 0.153
+        },
+        "entity_action": {
+            "type": "origins:delay",
+            "ticks": 2,
+            "action": {
+                "type": "origins:if_else",
+                "if_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "playsound minecraft:entity.slime.jump player @a[distance=..10] ~ ~ ~ 2 1.5 1"
+                        }
+                    ]
+                },
+                "condition": {
+                    "type": "origins:on_block"
+                }
+            }
+        }
+    },
+    "fall_damage_nullification": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fall"
+        }
+    },
+    "bounce": {
+        "type": "origins:action_on_land",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.slime.jump player @a[distance=..10] ~ ~ ~ 2 1 1"
+                },
+                {
+                    "type": "origins:if_else_list",
+                    "actions": [
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 3,
+                                        "comparison": ">"
+                                    },
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 5,
+                                        "comparison": "<="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "y": 0.6
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 5,
+                                        "comparison": ">"
+                                    },
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 10,
+                                        "comparison": "<="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "y": 0.75
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 10,
+                                        "comparison": ">"
+                                    },
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 15,
+                                        "comparison": "<="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "y": 1
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 15,
+                                        "comparison": ">"
+                                    },
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 25,
+                                        "comparison": "<="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "y": 1.25
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:fall_distance",
+                                "compare_to": 25,
+                                "comparison": ">"
+                            },
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "y": 1.75
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:sneaking",
+            "inverted": true
+        }
+    },
+    "dealmorekb": {
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "z": 0.5
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "playsound minecraft:entity.slime.hurt player @a[distance=..10] ~ ~ ~ 3 2 1"
+                    }
+                }
+            ]
+        }
+    },
+    "takemorekb": {
+        "type": "origins:action_when_hit",
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:exists"
+            }
+        },
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "z": 0.5
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "playsound minecraft:entity.slime.hurt player @a[distance=..10] ~ ~ ~ 3 2 1"
+                    }
+                }
+            ]
+        }
+    }
+}

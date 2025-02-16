@@ -1,0 +1,11 @@
+{
+	"order": 1,
+	"origins": [
+		"suwiorigins:huge",
+		"suwiorigins:tiny",
+		"suwiorigins:normal"
+	],
+	"name": "Size",
+	"default_origin": "suwiorigins:normal",
+	"auto_choose": true
+}

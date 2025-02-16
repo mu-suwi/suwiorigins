@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"suwiorigins:amphibious",
+		"origins:water_vision",
+		"origins:aqua_affinity",
+		"origins:swim_speed",
+		"origins:like_water",
+		"origins:fall_immunity",
+		"origins:scare_creepers",
+		"suwiorigins:torch_averse",
+		"suwiorigins:fire_vulnerable",
+		"origins:aquatic"
+	],
+	"icon": "minecraft:tropical_fish",
+	"order": 3,
+	"impact": 2,
+	"name": "Mercat",
+	"description": "These water-borne felines have a paw in both worlds."
+}

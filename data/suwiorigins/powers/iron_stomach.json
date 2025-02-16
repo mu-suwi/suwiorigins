@@ -1,0 +1,10 @@
+{
+	"type": "origins:effect_immunity",
+	"effects": [
+		"minecraft:hunger",
+		"minecraft:poison",
+		"minecraft:nausea"
+	],
+	"name": "Iron Stomach",
+	"description": "You can eat all sorts of nasty trash without getting sick."
+}

@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"suwiorigins:bouncy",
+		"suwiorigins:slime_trail",
+		"suwiorigins:flame_suppressant",
+		"suwiorigins:amphibious",
+		"suwiorigins:transparent",
+		"suwiorigins:freezable",
+		"suwiorigins:simple_creature"
+	],
+	"icon": "minecraft:slime_ball",
+	"order": 0,
+	"impact": 2,
+	"name": "Slime",
+	"description": "These cheerful, bouncy monsters have few natural predators."
+}

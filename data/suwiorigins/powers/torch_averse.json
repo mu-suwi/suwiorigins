@@ -1,0 +1,26 @@
+{
+    "name": "Torch-Averse",
+    "description": "Torches set you aflame.",
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:in_block_anywhere",
+                "block_condition": {
+                    "type": "origins:block",
+                    "block": "minecraft:torch"
+                }
+            },
+            {
+                "type": "origins:in_block_anywhere",
+                "block_condition": {
+                    "type": "origins:block",
+                    "block": "minecraft:wall_torch"
+                }
+            }
+        ]
+    },
+    "type": "origins:burn",
+    "interval": 1,
+    "burn_duration": 1
+}

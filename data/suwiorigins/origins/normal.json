@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"suwiorigins:sizenotes"
+	],
+	"icon": {
+		"item": "minecraft:player_head"
+	},
+	"order": 0,
+	"impact": 0,
+	"name": "Normal-sized",
+	"description": "Fairly average-sized."
+} 

@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"suwiorigins:claws",
+		"origins:strong_arms"
+	],
+	"icon": "minecraft:spruce_sapling",
+	"order": 0,
+	"impact": 3,
+	"name": "Huge",
+	"description": "You are big!!!",
+	"unchoosable": true
+}

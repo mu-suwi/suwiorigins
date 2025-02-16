@@ -1,0 +1,11 @@
+{
+	"type": "origins:toggle_night_vision",
+	"strength": 0.4,
+	"condition": {
+		"type": "origins:submerged_in",
+		"fluid": "minecraft:water",
+		"inverted": true
+	},
+	"name": "Nocturnal",
+	"description": "Your eyes easily adapt to the dark."
+}
