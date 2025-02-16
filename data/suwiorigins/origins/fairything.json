@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"suwiorigins:flutter",
+		"suwiorigins:tinyreal",
+		"suwiorigins:noarmor",
+		"suwiorigins:splattable",
+		"suwiorigins:thorns_immunity",
+		"suwiorigins:mountanything"
+	],
+	"icon": "minecraft:pink_petals",
+	"order": 6,
+	"impact": 3,
+	"name": "Fairy-Thing",
+	"description": "Some type of little fairy boy? Is that a boy? Eh...? It can flutter around like a bug, which is cool, but it doesn't look very tough..."
+}
