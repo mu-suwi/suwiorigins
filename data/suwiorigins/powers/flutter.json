@@ -1,0 +1,106 @@
+{
+	"type": "origins:multiple",
+	"jump_reset": {
+	  "type": "origins:action_over_time",
+	  "interval": 4,
+	  "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:clear_effect",
+		        "effect": "minecraft:slow_falling"
+            },
+            {
+				"type": "origins:execute_command",
+				"command": "cpm animate @s airborne 0",
+                "permission_level": 0
+            }
+        ]
+	  },
+	  "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:on_block"
+            },
+            {
+                "type": "origins:sneaking"
+            }
+        ]
+	  }
+	},
+	"activating_jump": {
+	  "type": "origins:active_self",
+	  "cooldown": 0,
+	  "hud_render": {
+		"should_render": false
+	  },
+	  "condition": {
+		"type": "origins:and",
+		"conditions": [
+		  {
+			"type": "origins:on_block",
+			"inverted": true
+		  },
+		  {
+			"type": "origins:fluid_height",
+			"fluid": "minecraft:water",
+			"comparison": "==",
+			"compare_to": 0
+		  },
+		  {
+			"type": "origins:fluid_height",
+			"fluid": "minecraft:lava",
+			"comparison": "==",
+			"compare_to": 0
+		  }
+		]
+	  },
+	  "entity_action": {
+		"type": "origins:and",
+		"actions": [
+		    {
+                "type": "origins:add_velocity",
+                "set": true,
+                "y": 0.5
+		    },
+		    {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.parrot.fly",
+                "volume": 0.5
+		    },
+	        {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:moving"
+                },
+                "if_action": {
+                    "type": "origins:add_velocity",
+                    "space": "local",
+                    "z": 0.0
+			    }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "effect": "minecraft:slow_falling",
+                        "amplifier": 2,
+                        "duration": 400,
+                        "is_ambient": false,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                ]
+            },
+			{
+				"type": "origins:execute_command",
+				"command": "cpm animate @s airborne 1",
+                "permission_level": 0
+			}
+		]
+	  }
+	},
+	"name": "Flutter",
+	"description": "Press the ACTION BUTTON while midair to flutter. While fluttering, you fall more slowly. Flutter repeatedly to gain altitude!"
+  }

@@ -1,0 +1,10 @@
+{
+	"type": "origins:modify_damage_taken",
+	"modifier":
+	{
+		"operation": "multiply_base",
+        "value": 3.3333333
+	},
+	"name": "Splattable",
+	"description": "Dies in one or two hits."
+}

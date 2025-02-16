@@ -27,5 +27,7 @@
     "condition": {
         "type": "origins:sneaking",
         "inverted": true
-    }
+    },
+    "name": "Mount anything",
+	"description": "Ride any entity by right clicking with an empty hand."
 } 

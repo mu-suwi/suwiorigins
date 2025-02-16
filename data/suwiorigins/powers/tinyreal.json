@@ -1,0 +1,32 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 120,
+	"entity_action":
+	{
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "scale set pehkui:base 0.333333 @s",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale set pehkui:motion 3 @s",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale set pehkui:reach 3 @s",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale set pehkui:falling 0 @s",
+				"permission_level": 4
+			}
+		]
+	},
+	"name": "Small",
+	"description": "Small..."
+}
