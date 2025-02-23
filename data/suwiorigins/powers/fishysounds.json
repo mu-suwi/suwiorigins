@@ -1,0 +1,15 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:play_sound",
+		"sound": "minecraft:entity.guardian.ambient",
+		"pitch": 2.0,
+		"volume": 2.0
+	},
+	"cooldown": 15,
+	"hud_render": {
+		"should_render": false
+	},
+	"name": "Fishy sounds",
+	"description": "Make yourself heard from a distance of over 30m."
+}
