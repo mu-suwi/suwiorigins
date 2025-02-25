@@ -1,0 +1,38 @@
+{
+    "name": "Cozy Home",
+    "description": "Use while sneaking to keep them safe and warm.",
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "tag @a[distance=0.1..2] add wombed"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.witch.drink",
+                "volume": 1,
+                "pitch": 0.8
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "gamemode spectator @a[tag=wombed]"
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "spectate @s @a[tag=wombed]"
+                },
+                "ticks": 18
+            }
+        ]
+    }
+}

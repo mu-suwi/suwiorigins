@@ -1,0 +1,10 @@
+{
+	"name": "Endosoma",
+	"description": "Your insides are comfy and danger-free.",
+	"icon": "minecraft:turtle_egg",
+	"powers": [
+		"suwiorigins:womb",
+		"suwiorigins:birth"
+	],
+	"unchoosable": true
+}

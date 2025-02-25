@@ -1,0 +1,57 @@
+{
+    "name": "Birth!",
+    "description": "Use without sneaking to let them back out into the world!",
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:sneaking",
+                "inverted": true
+            },
+            {
+                "type": "origins:command",
+                "command": "execute if entity @a[tag=wombed]",
+                "comparison": ">=",
+                "compare_to": 1
+            }
+        ]
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "tellraw @a [{\"selector\":\"@a[tag=wombed]\",\"color\":\"yellow\"},{\"text\":\" has joined the game\",\"color\":\"yellow\"}]"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.chicken.egg",
+                "volume": 1
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "tp @a[tag=wombed,gamemode=spectator] @s"
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "gamemode survival @a[tag=wombed]"
+                },
+                "ticks": 5
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "tag @a[tag=wombed] remove wombed"
+                },
+                "ticks": 13
+            }
+        ]
+    }
+}

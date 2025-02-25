@@ -1,10 +1,11 @@
 {
+	"name": "vore role",
 	"origins": [
 		"suwiorigins:pred",
 		"suwiorigins:polite_pred",
+		"suwiorigins:endosoma",
 		"suwiorigins:prey"
 	],
 	"auto_choose": true,
-	"default_origin": "suwiorigins:prey",
-	"hidden": true
+	"default_origin": "suwiorigins:prey"
 }

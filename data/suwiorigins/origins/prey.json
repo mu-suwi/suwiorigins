@@ -1,3 +1,6 @@
 {
+	"name": "Prey",
+	"description": "The default vore role.",
+	"icon": "minecraft:rabbit_foot",
 	"powers": []
 }

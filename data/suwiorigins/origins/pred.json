@@ -1,7 +1,11 @@
 {
+	"name":"Pred",
+	"description":"Your insatiable stomach can digest any living thing.",
+	"icon": "farmersdelight:ham",
 	"powers": [
 		"suwiorigins:eat",
-		"suwiorigins:eat_mobs"
+		"suwiorigins:eat_mobs",
+		"suwiorigins:burp"
 	],
 	"unchoosable": true
 }
