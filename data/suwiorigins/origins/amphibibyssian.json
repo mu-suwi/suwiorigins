@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"origins:water_breathing",
+		"origins:water_vision",
+		"origins:aqua_affinity",
+		"origins:swim_speed",
+		"origins:like_water",
+		"suwiorigins:eat_grass",
+		"suwiorigins:fishysounds",
+		"origins:aquatic",
+		"suwiorigins:semi_amphibious",
+		"origins:air_from_potions"
+	],
+	"icon": "minecraft:axolotl_bucket",
+	"order": 3,
+	"impact": 2,
+	"name": "Amphibibyssian",
+	"description": "A three-eyed chimera with strange powers of the deep."
+}

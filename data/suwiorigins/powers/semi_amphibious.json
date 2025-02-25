@@ -1,0 +1,19 @@
+{
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effect": {
+      "effect": "minecraft:water_breathing",
+      "duration": 6000,
+      "amplifier": 0,
+      "show_particles": false,
+      "show_icon": false
+		}
+	},
+	"interval": 20,
+	"condition": {
+		"type": "origins:submerged_in",
+		"fluid": "minecraft:water"
+	},
+	"hidden": "true"
+}
