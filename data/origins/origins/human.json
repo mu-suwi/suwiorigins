@@ -1,4 +1,9 @@
 {
+	"name": "Simple",
+	"description": "A normal Minecraft creature with no intrusive features.",
+	"icon": {
+		"item": "minecraft:player_head"
+	},
 	"loading_priority": 10,
 	"powers": [
 		"suwiorigins:notes"
