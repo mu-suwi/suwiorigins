@@ -1,5 +1,5 @@
 {
-    "name": "Big Bappy Claws",
+    "name": "Natural Danger",
     "description": "Your unarmed attacks deal extra damage.",
     "condition": {
         "type": "origins:equipped_item",

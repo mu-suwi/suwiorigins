@@ -1,16 +1,16 @@
 {
 	"powers": [
-		"suwiorigins:claws",
 		"suwiorigins:lava_paddler",
 		"origins:hotblooded",
-		"origins:scare_creepers",
 		"suwiorigins:huge_appetite",
 		"suwiorigins:hungery",
 		"suwiorigins:lava_milkable"
+		"suwiorigins:knockback_resistant"
+		"suwiorigins:pickupanyone"
 	],
 	"icon": "create:sweet_roll",
 	"order": 6,
 	"impact": 2,
 	"name": "Upy-Type Beast",
-	"description": "A massive lion-like creature who loves to relax in a hot bath."
+	"description": "A dragon-like creature who loves to relax in a hot bath."
 }
