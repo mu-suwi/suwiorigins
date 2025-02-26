@@ -1,7 +1,8 @@
 {
 	"powers": [
 		"suwiorigins:thorns_immunity",
-		"origins:weak_arms"
+		"origins:weak_arms",
+		"suwiorigins:mountanything"
 	],
 	"icon": "minecraft:red_mushroom",
 	"order": 0,
