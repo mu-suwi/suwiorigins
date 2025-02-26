@@ -13,7 +13,7 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "tag @a[distance=0.1..2] add wombed"
+                "command": "tag @p[distance=0.1..2,gamemode=survival] add wombed"
             },
             {
                 "type": "origins:play_sound",
@@ -23,13 +23,13 @@
             },
             {
                 "type": "origins:execute_command",
-                "command": "gamemode spectator @a[tag=wombed]"
+                "command": "gamemode spectator @p[tag=wombed,gamemode=survival]"
             },
             {
                 "type": "origins:delay",
                 "action": {
                     "type": "origins:execute_command",
-                    "command": "spectate @s @a[tag=wombed]"
+                    "command": "spectate @s @p[tag=wombed,gamemode=spectator,sort=furthest]"
                 },
                 "ticks": 18
             }

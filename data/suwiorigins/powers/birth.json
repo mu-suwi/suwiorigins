@@ -25,7 +25,7 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "tellraw @a [{\"selector\":\"@a[tag=wombed]\",\"color\":\"yellow\"},{\"text\":\" has joined the game\",\"color\":\"yellow\"}]"
+                "command": "tellraw @a [{\"selector\":\"@p[tag=wombed]\",\"color\":\"yellow\"},{\"text\":\" joined the game\",\"color\":\"yellow\"}]"
             },
             {
                 "type": "origins:play_sound",
@@ -34,13 +34,13 @@
             },
             {
                 "type": "origins:execute_command",
-                "command": "tp @a[tag=wombed,gamemode=spectator] @s"
+                "command": "tp @p[tag=wombed,gamemode=spectator] @s"
             },
             {
                 "type": "origins:delay",
                 "action": {
                     "type": "origins:execute_command",
-                    "command": "gamemode survival @a[tag=wombed]"
+                    "command": "gamemode survival @p[tag=wombed]"
                 },
                 "ticks": 5
             },
@@ -48,7 +48,7 @@
                 "type": "origins:delay",
                 "action": {
                     "type": "origins:execute_command",
-                    "command": "tag @a[tag=wombed] remove wombed"
+                    "command": "tag @a[tag=wombed,gamemode=survival] remove wombed"
                 },
                 "ticks": 13
             }
