@@ -12,7 +12,7 @@
             {
                 "type": "origins:invert",
 				"condition":{
-					"type": "origins:riding"
+					"type": "origins:riding",
 					"inverted": true
 				}
             },
