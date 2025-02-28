@@ -14,7 +14,7 @@
             },
             {
                 "type": "origins:command",
-                "command": "execute if entity @a[tag=wombed]",
+                "command": "execute if entity @a[tag=wombed,gamemode=spectator]",
                 "comparison": ">=",
                 "compare_to": 1
             }
@@ -25,7 +25,11 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "tellraw @a [{\"selector\":\"@p[tag=wombed]\",\"color\":\"yellow\"},{\"text\":\" joined the game\",\"color\":\"yellow\"}]"
+                "command": "tag @p[tag=wombed,gamemode=spectator,sort=nearest] add birthed"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "execute if entity @p[name=LostForte,tag=birthed] run tellraw @a [{\"selector\":\"@p[tag=birthed]\",\"color\":\"yellow\"},{\"text\":\" joined the game\",\"color\":\"yellow\"}]"
             },
             {
                 "type": "origins:play_sound",
@@ -34,13 +38,13 @@
             },
             {
                 "type": "origins:execute_command",
-                "command": "tp @p[tag=wombed,gamemode=spectator] @s"
+                "command": "tp @p[tag=birthed] @s"
             },
             {
                 "type": "origins:delay",
                 "action": {
                     "type": "origins:execute_command",
-                    "command": "gamemode survival @p[tag=wombed]"
+                    "command": "gamemode survival @p[tag=birthed]"
                 },
                 "ticks": 5
             },
@@ -48,9 +52,17 @@
                 "type": "origins:delay",
                 "action": {
                     "type": "origins:execute_command",
-                    "command": "tag @a[tag=wombed,gamemode=survival] remove wombed"
+                    "command": "tag @a[tag=birthed,tag=wombed] remove wombed"
                 },
                 "ticks": 13
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "tag @a[tag=birthed] remove birthed"
+                },
+                "ticks": 18
             }
         ]
     }
