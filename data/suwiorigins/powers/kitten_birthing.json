@@ -2,6 +2,9 @@
     "name": "Kitten Birthing",
     "description": "You're sooooo pregnant",
     "type": "origins:active_self",
+      "key": {
+          "key": "key.origins.secondary_active"
+      },
     "entity_action": {
         "type": "origins:and",
         "actions": [
