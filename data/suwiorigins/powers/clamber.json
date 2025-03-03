@@ -1,23 +1,44 @@
 {
     "name": "Clamber",
-    "description": "You can climb up through a 1x1 shaft as long as there are blocks on at least three sides.",
+    "description": "You can climb upwards through any gap where two walls enclose you from opposite sides.",
     "type": "origins:climbing",
     "condition": {
         "type": "origins:and",
         "conditions": [
-          {
-            "type": "origins:block_in_radius",
-            "block_condition": {
-                "type": "origins:movement_blocking"
+            {
+                "type": "origins:collided_horizontally"
             },
-            "radius": 1,
-            "shape": "star",
-            "comparison": ">=",
-            "compare_to": 3
-          },
-          {
-            "type": "origins:collided_horizontally"
-          }
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block_collision",
+                                "offset_x": 1.5
+                            },
+                            {
+                                "type": "origins:block_collision",
+                                "offset_x": -1.5
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block_collision",
+                                "offset_z": 1.5
+                            },
+                            {
+                                "type": "origins:block_collision",
+                                "offset_z": -1.5
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
     }
 }
