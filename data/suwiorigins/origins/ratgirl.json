@@ -1,10 +1,11 @@
 {
 	"powers": [
-		"origins:sprint_jump",
+		"suwiorigins:clamber",
 		"suwiorigins:less_fall_damage",
 		"origins:weak_arms",
 		"suwiorigins:uneconomical",
-		"suwiorigins:squeak"
+		"suwiorigins:squeak",
+		"suwiorigins:cheese_breedable"
 	],
 	"icon": "minecraft:pink_wool",
 	"order": 10,
